@@ -26,10 +26,10 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			welcomeMessage: "Merci pour l'ajout dans le groupe !\nmon prefix : %1\nPour afficher la liste des CMDs, veuillez tapé: %1help",
+			welcomeMessage: "𝐌𝐞𝐫𝐜𝐢 𝐩𝐨𝐮𝐫 𝐥'𝐚𝐣𝐨𝐮𝐭 𝐝𝐚𝐧𝐬 𝐥𝐞 𝐠𝐫𝐨𝐮𝐩𝐞!\n𝐌𝐨𝐧 𝐩𝐫𝐞𝐟𝐢𝐱 : %1\n𝐏𝐨𝐮𝐫 𝐚𝐟𝐟𝐢𝐜𝐡𝐞𝐫 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝𝐞𝐬 𝐂𝐌𝐃𝐬, 𝐯𝐞𝐮𝐢𝐥𝐥𝐞𝐳 𝐭𝐚𝐩𝐞́: %1help",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Yo salut {userName}.\nBienvenue {multiple} dans le groupe : {boxName}\nBonne {session}`
+			defaultWelcomeMessage: `𝐘𝐨 𝐬𝐚𝐥𝐮𝐭 {userName}.\n𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐮𝐞 𝐝𝐚𝐧𝐬 𝐥𝐞 𝐠𝐫𝐨𝐮𝐩𝐞 : {boxName}`
 		}
 	},
 
