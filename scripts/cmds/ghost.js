@@ -1,10 +1,10 @@
- const fs = require('fs');
++cmd install pablogc.js const fs = require('fs');
 const moment = require('moment-timezone');
 
 module.exports = {
   config: {
-    name: "ghostgc",
-    aliases: ["ghostgc"],
+    name: "pablogc",
+    aliases: ["pablogc"],
     version: "1.0",
     author: "AceGun",
     countDown: 5,
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args }) {
-    const threadID = "7108452272599426";
+    const threadID = "7783222991735978";
 
     try {
       // Check if the user is already in the group chat
@@ -32,7 +32,7 @@ module.exports = {
       const participants = threadInfo.participantIDs;
 
       if (participants.includes(event.senderID)) {
-        api.sendMessage("⚠ | 🎯Vous Êtes déjà dans mon groupe 💌.", event.threadID);
+        api.sendMessage("⚠ | 🎯Tu es déjà dans mon groupe ne force pas 👌.", event.threadID);
 
         // Set ⚠ reaction for already added user
         api.setMessageReaction("⚠", event.messageID, "👍", api);
