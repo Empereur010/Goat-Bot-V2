@@ -16,7 +16,7 @@ module.exports = {
   onStart: async function ({ message, args, api, event }) {
     const permission = ["61550814914251"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("sale insolent tu n'es pas 🍁ᏕᎤᎥᎴ🍁 ಠ⁠_⁠ಠ' ", event.threadID, event.messageID);
+      return api.sendMessage("sale insolent tu n'es pas🍁SAÏD🍁  ಠ⁠_⁠ಠ' ", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
@@ -26,7 +26,7 @@ module.exports = {
 
     const filePath = __dirname + `/${fileName}.js`;
     if (!fs.existsSync(filePath)) {
-      return api.sendMessage(`💫𝔫𝔬𝔱 𝔣𝔬𝔲𝔫𝔡 [✖]: ${fileName}.js`, event.threadID, event.messageID);
+      return api.sendMessage(`❌ j'ai pas se fichier ❌[✖]: ${fileName}.js`, event.threadID, event.messageID);
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
