@@ -12,19 +12,19 @@ module.exports = {
 		category: "config",
 		guide: {
 			vi: "   {pn} <new prefix>: thay đổi prefix mới trong box chat của bạn"
-				+ "\n   Ví dụ:"
-				+ "\n    {pn} #"
-				+ "\n\n   {pn} <new prefix> -g: thay đổi prefix mới trong hệ thống bot (chỉ admin bot)"
-				+ "\n   Ví dụ:"
-				+ "\n    {pn} # -g"
-				+ "\n\n   {pn} reset: thay đổi prefix trong box chat của bạn về mặc định",
+				+ "\  Ví dụ:"
+				+ "\   {pn} #"
+				+ "\   {pn} <new prefix> -g: thay đổi prefix mới trong hệ thống bot (chỉ admin bot)"
+				+ "\  Ví dụ:"
+				+ "\   {pn} # -g"
+				+ "\   {pn} reset: thay đổi prefix trong box chat của bạn về mặc định",
 			en: "   {pn} <new prefix>: change new prefix in your box chat"
-				+ "\n   Example:"
-				+ "\n    {pn} #"
-				+ "\n\n   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)"
-				+ "\n   Example:"
-				+ "\n    {pn} # -g"
-				+ "\n\n   {pn} reset: change prefix in your box chat to default"
+				+ "\  Example:"
+				+ "\   {pn} #"
+				+ "\   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)"
+				+ "\  Example:"
+				+ "\   {pn} # -g"
+				+ "\   {pn} reset: change prefix in your box chat to default"
 		}
 	},
 
@@ -36,7 +36,7 @@ module.exports = {
 			confirmThisThread: "Vui lòng thả cảm xúc bất kỳ vào tin nhắn này để xác nhận thay đổi prefix trong nhóm chat của bạn",
 			successGlobal: "Đã thay đổi prefix hệ thống bot thành: %1",
 			successThisThread: "Đã thay đổi prefix trong nhóm chat của bạn thành: %1",
-			myPrefix: "🌐 Prefix của hệ thống: %1\n🛸 Prefix của nhóm bạn: %2"
+			myPrefix: "🌐 Prefix của hệ thống: %1\? Prefix của nhóm bạn: %2"
 		},
 		en: {
 			reset: "Your prefix has been reset to default: %1",
@@ -45,7 +45,8 @@ module.exports = {
 			confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
 			successGlobal: "Changed prefix of system bot to: %1",
 			successThisThread: "Changed prefix in your box chat to: %1",
-			myPrefix: "༐⸙ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐩𝐫𝐞𝐟𝐢𝐱: %1\n༐⸙ 𝐘𝐨𝐮𝐫 𝐛𝐨𝐱 𝐜𝐡𝐚𝐭 𝐩𝐫𝐞𝐟𝐢𝐱: %2 ┈┈┈┈┈┈┈┈┈┈⚋⚋┈┈┈┈┈┈┈┈┈┈┈࿂...𝗛𝗔𝗜𝗧𝗔𝗡𝗜...࿂┈┈┈┈"
+			myPrefix: "🥷𝐌𝐈𝐂𝐊𝐄𝐘,𝐒𝐂𝐇𝐎𝐓𝐓🥷  \__________________\
+ 𝐌𝐘 𝐏𝐑𝐄𝐅𝐈𝐗 ➪  ✍︎%1✍︎\n __________________\n ➪ 𝚙𝚘𝚞𝚛 𝚟𝚘𝚒𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚖𝚍 é𝚌𝚛𝚒𝚟𝚎𝚣 ☞︎︎︎+𝚑𝚎𝚕𝚙☜︎︎︎\n\n___________________"
 		}
 	},
 
