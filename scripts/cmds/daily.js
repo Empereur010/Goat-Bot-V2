@@ -47,7 +47,7 @@ module.exports = {
 			saturday: "Saturday",
 			sunday: "Sunday",
 			alreadyReceived: "Tu as déjà reçu ton cadeau du jour",
-			received: "Tu as reçu %1 dollars et %2 exp"
+			received: "𝐓𝐮 𝐚𝐬 𝐫𝐞𝐜̧𝐮 %1 𝐝𝐨𝐥𝐥𝐚𝐫𝐬 𝐞𝐭  %2 𝐞𝐱𝐩"
 		}
 	},
 
