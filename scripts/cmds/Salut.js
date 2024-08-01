@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "salut",
         version: "1.0",
-        author: "ཋྀɞHaïtanįɞ く命ཋྀ༅ ✨",
+        author: "Z.saïd く ✨",
         countDown: 5,
         role: 0,
         shortDescription: "sarcasm",
