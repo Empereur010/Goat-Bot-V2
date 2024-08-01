@@ -94,15 +94,15 @@ handlerEvents.threadBanned=This group has been banned from using the bot\n» Rea
 handlerEvents.onlyAdminBox=This group is currently enabled only group administrators can use the bot
 handlerEvents.onlyAdminBot=❌ | Currently only bot's admin can use bot \n______________ \n💦𝙳𝙰𝙴𝙼𝙾𝙽
 handlerEvents.commandNotFound=🕊️𝚌𝚎𝚝𝚝𝚎 𝚌𝚖𝚍 𝚗'𝚎𝚡𝚒𝚜𝚝𝚎 𝚙𝚊𝚜 𝚌𝚘𝚗𝚜𝚞𝚕𝚝𝚎 =help
-handlerEvents.commandNotFound2=🕊️𝚂𝙾𝚄𝚁𝙲𝙴 𝙳𝚄 𝙱𝙾𝚃🕊️ \n━━━━━━━━━━ \n🕊️𝙲𝚁𝙴𝙰𝚃𝙴𝚄𝚁 :ཋྀɞ𝗛𝗔𝗜𝗧𝗔𝗡𝗜ɞ く命 \n🕊️𝙻𝙸𝙴𝙽 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺 : https://www.facebook.com/uchiwapro2michael \n┉┉┉┉┉┉┉┉┉┉┉┉ ☄༐⸙..❤️‍🔥..𝙷𝙰𝙸𝚃𝙰𝙽𝙸..༐⸙..❍🪽
+handlerEvents.commandNotFound2=🕊️𝐒𝐎𝐔𝐑𝐂𝐄 𝐃𝐔 𝐁𝐎𝐓🕊️ \n━━━━━━━━━━ \n🕊️𝐂𝐑𝐄𝐀𝐓𝐄𝐔𝐑 :ᏋᎷᎮᏋᏒᏋᏬᏒ ᏕᎤᎥᎴく命 \n🕊️𝐋𝐈𝐄𝐍𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊: https://www.facebook.com/profile.php?id=61550814914251 \n┉┉┉┉┉┉┉┉┉┉┉┉ ☄༐⸙..❤️‍🔥..•SAÏD•..༐⸙..❍🪽
 handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
-handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1" \n______________ \n🕊️𝙷𝙰𝙸𝚃𝙰𝙽𝙸く命ཋྀ༅ 
+handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1" \n______________ \n 𝐒𝐀𝐈̈𝐃く🍁
 handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1" 💀GHØST✨👻
 handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1" \n☄⚋⚋⚋⚋⚋⚋⚋⚋⚋⚋⚋⚋⚋⚋┉ ⸙..❤️‍🔥..ʜᴀɪᴛᴀɴɪ ༐⸙🪽
 handlerEvents.onlyAdminBot2=❌ | Only bot's admin can use the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
-handlerEvents.waitingForCommand=⏱ 😕ATTEND ENCORE UN PEU TU ES PRESSÉ POURQUOI \n☄️ཋྀɞHAITANIɞ🪽 %1s
+handlerEvents.waitingForCommand=⏱ 😕ATTEND ENCORE UN PEU TU ES PRESSÉ POURQUOI \n☄️ཋྀ••SAÏD••🪽 %1s
 handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
 handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
 handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
