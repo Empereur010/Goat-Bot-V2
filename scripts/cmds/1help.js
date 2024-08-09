@@ -12,7 +12,7 @@ const doNotDelete = "•🍁𝐌𝐈𝐂𝐊𝐄𝐘🍁•";
 
 module.exports = {
   config: {
-    name: "help2",
+    name: "help",
     version: "1.17",
     author: "ᏋᎷᎮᏋᏒᏋᏬᏒ ᏕᎤᎥᎴ💦",
     countDown: 5,
