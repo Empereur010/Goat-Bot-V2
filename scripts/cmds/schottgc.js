@@ -3,8 +3,8 @@ const moment = require('moment-timezone');
 
 module.exports = {
   config: {
-    name: "pablogc",
-    aliases: ["pablogc"],
+    name: "schottgc",
+    aliases: ["schottgc"],
     version: "1.0",
     author: "AceGun",
     countDown: 5,
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args }) {
-    const threadID = "7783222991735978";
+    const threadID = "7976915545679709";
 
     try {
       // Check if the user is already in the group chat
@@ -32,17 +32,17 @@ module.exports = {
       const participants = threadInfo.participantIDs;
 
       if (participants.includes(event.senderID)) {
-        api.sendMessage("⚠ | 🎯Tu es déjà dans mon groupe ne force pas 👌.", event.threadID);
+        api.sendMessage("⚠ | 🎯Tu es déjà dans mon groupe ne force pas,jà dans le groupe, si tu ne le retrouve pas recherche dans ta boite de spam🍁", event.threadID);
 
         // Set ⚠ reaction for already added user
         api.setMessageReaction("⚠", event.messageID, "👍", api);
       } else {
         // If not, add the user to the group chat
         await api.addUserToGroup(event.senderID, threadID);
-        api.sendMessage("✅ | 🎯tu es déjà dans le groupe, si tu ne le retrouve pas recherche dans ta boite de spam", event.threadID);
+        api.sendMessage("✅ | 🍷 Tu as été ajouté dans mon groupe avec succès 🍁", event.threadID);
 
         // Set ✅ reaction for successfully added user
-        api.setMessageReaction("✅", event.messageID, "👍", api);
+        api.setMessageReaction("🍀", event.messageID, "👍", api);
       }
     } catch (error) {
       api.sendMessage("❌ | 🎯 une erreur c'est produite veillez réessayer plus tard😴", event.threadID);
