@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("Salut mon pote ☺️ moi c'est 💀☄️GHOST👻 si t'as un problème n'hésite pas à me voir 😸 ta satisfaction est ma priorité absolue ✨💜☄️");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("ouaip Salut mon pote tranquille ? aller pose moi t'a question du jour 🥀😌👌");
 }
 };
