@@ -32,7 +32,7 @@ module.exports = {
       const participants = threadInfo.participantIDs;
 
       if (participants.includes(event.senderID)) {
-        api.sendMessage("⚠ | 🎯Tu es déjà dans mon groupe ne force pas,jà dans le groupe, si tu ne le retrouve pas recherche dans ta boite de spam🍁", event.threadID);
+        api.sendMessage("⚠ | 🎯Tu es déjà dans mon groupe ne force pas,si tu ne le retrouve pas recherche dans ta boite de spam🍁", event.threadID);
 
         // Set ⚠ reaction for already added user
         api.setMessageReaction("⚠", event.messageID, "👍", api);
