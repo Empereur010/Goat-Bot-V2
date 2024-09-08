@@ -2,27 +2,27 @@ const axios = require("axios");
 
 
 
-module.exportations = {
+module.exports = {
 
-  configuration: {
+  config: {
 
-    nom : 'cmdstore',
+    name: 'cmdstore',
 
     version: '1.0',
 
-    auteur : 'Vex_Kshitiz',
+    author: 'Vex_Kshitiz',
 
-    rôle: 2,
+    role: 2,
 
-    shortDescription : « magasin de commandes »,
+    shortDescription: 'store of cmds',
 
-    longDescription : « magasin de commandes toutes créées par kshitiz »,
+    longDescription: 'store of cmds all  made by kshitiz',
 
-    catégorie : « utilitaire »,
+    category: 'utility',
 
     guide: {
 
-      fr: 'Pour afficher les commandes : {p}cmdstore\nPour paginer : {p}cmdstore {page}\nPour rechercher : {p}cmdstore {search}'
+      en: 'To view commands: {p}cmdstore\nTo paginate: {p}cmdstore {page}\nTo search: {p}cmdstore {search}'
 
     }
 
@@ -30,13 +30,13 @@ module.exportations = {
 
 
 
-  onStart : fonction asynchrone ({ api, événement, args, message }) {
+  onStart: async function ({ api, event, args, message }) {
 
-    essayer {
+    try {
 
-      laissez page = 1;
+      let page = 1;
 
-      laissez searchQuery = "";
+      let searchQuery = "";
 
 
 
@@ -44,29 +44,29 @@ module.exportations = {
 
         page = parseInt(args[0]);
 
-      } sinon si (args.length === 1 && typeof args[0] === 'string') {
+      } else if (args.length === 1 && typeof args[0] === 'string') {
 
-        requête de recherche = args[0];
+        searchQuery = args[0];
 
-      } else if (args.length === 2 && args[0] === 'recherche' && typeof args[1] === 'chaîne') {
+      } else if (args.length === 2 && args[0] === 'search' && typeof args[1] === 'string') {
 
-        requête de recherche = args[1];
+        searchQuery = args[1];
 
       }
 
 
 
-      const réponse = wait axios.get("https://cmd-store.vercel.app/kshitiz");
+      const response = await axios.get("https://cmd-store.vercel.app/kshitiz");
 
-      commandes const = réponse.données ;
+      const commands = response.data;
 
 
 
-      laissez filteredCommands = commandes ;
+      let filteredCommands = commands;
 
-      si (requête de recherche) {
+      if (searchQuery) {
 
-        Commandes filtrées = commandes.filter(cmd => cmd.cmdName.toLowerCase().includes(searchQuery.toLowerCase()));
+        filteredCommands = commands.filter(cmd => cmd.cmdName.toLowerCase().includes(searchQuery.toLowerCase()));
 
       }
 
@@ -80,29 +80,29 @@ module.exportations = {
 
 
 
-      laissez replyMessage = "";
+      let replyMessage = "";
 
-      commandespaginées.forEach(cmd => {
+      paginatedCommands.forEach(cmd => {
 
-        message de réponse += `
+        replyMessage += `
 
         𝗜𝗗:${cmd.id}
 
-        NOM:${cmd.cmdName}
+        𝗖𝗠𝗗:${cmd.cmdName}
 
-        INFO:${cmd.codeLink}
+        𝗖𝗢𝗗𝗘:${cmd.codeLink}
 
-        Remarque : ${cmd.description}
+        𝗜𝗡𝗙𝗢:${cmd.description}
 
-      ----------------------------------------------` ;
+      ----------------------------------------------`;
 
       });
 
 
 
-      si (réponseMessage === "") {
+      if (replyMessage === "") {
 
-        replyMessage = "Aucune commande trouvée.";
+        replyMessage = "No commands found.";
 
       }
 
@@ -112,23 +112,23 @@ module.exportations = {
 
         global.GoatBot.onReply.set(info.messageID, {
 
-          nom de commande : « cmdstore »,
+          commandName: "cmdstore",
 
-          messageID : info.messageID,
+          messageID: info.messageID,
 
-          auteur : event.senderID,
+          author: event.senderID,
 
-          commandes,
+          commands,
 
         });
 
       });
 
-    } catch (erreur) {
+    } catch (error) {
 
-      console.error(erreur);
+      console.error(error);
 
-      message.reply("Une erreur s'est produite lors de la récupération des commandes.");
+      message.reply("An error occurred while fetching commands.");
 
     }
 
@@ -136,15 +136,15 @@ module.exportations = {
 
 
 
-  onReply : fonction asynchrone ({ api, événement, réponse, args, message }) {
+  onReply: async function ({ api, event, Reply, args, message }) {
 
-    const {author, commandName, commands} = Répondre;
+    const { author, commandName, commands } = Reply;
 
 
 
-    si (event.senderID !== auteur || !commandes) {
+    if (event.senderID !== author || !commands) {
 
-      retour;
+      return;
 
     }
 
@@ -154,36 +154,36 @@ module.exportations = {
 
 
 
-    si (isNaN(commandID) || !commands.some(cmd => cmd.id === commandID)) {
+    if (isNaN(commandID) || !commands.some(cmd => cmd.id === commandID)) {
 
-      message.reply("Entrée non valide.\nVeuillez fournir un ID de commande valide.");
+      message.reply("Invalid input.\nPlease provide a valid command ID.");
 
-      retour;
+      return;
 
     }
 
 
 
-    const selectedCommand = commandes.find(cmd => cmd.id === commandID);
+    const selectedCommand = commands.find(cmd => cmd.id === commandID);
 
 
 
-    laissez replyMessage = `
+    let replyMessage = `
 
     𝗜𝗗:${selectedCommand.id}
 
-    Exemple : ${selectedCommand.cmdName}
+    𝗖𝗠𝗗:${selectedCommand.cmdName}
 
-    Remarque : ${selectedCommand.codeLink}
+    𝗖𝗢𝗗𝗘:${selectedCommand.codeLink}
 
-    Remarque : ${selectedCommand.description}`;
+    𝗜𝗡𝗙𝗢:${selectedCommand.description}`;
 
 
 
-    message.réponse(réponseMessage);
+    message.reply(replyMessage);
 
-    global.GoatBot.onReply.delete(événement.messageID);
+    global.GoatBot.onReply.delete(event.messageID);
 
   },
 
-  }
+};
